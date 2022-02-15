@@ -77,6 +77,7 @@ contents.each do |row|
 
   time = DateTime.strptime(row[:regdate], "%m/%d/%Y %H:%M") # "05/12/2015"
   # Convert string to time with minutes => time = time.strftime("%H:%M")
+  
   time = time.hour
   times << time
 
